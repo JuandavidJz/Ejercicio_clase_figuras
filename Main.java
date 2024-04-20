@@ -2,15 +2,15 @@ package clase.ejercicio;
 
 public class Main {
     public static void main(String[] args) {
-        Cuadrado cuadrado = new Cuadrado("Cuadrado", 5);
-        Circulo circulo = new Circulo("Circulo", 3.5);
-        Rectangulo rectangulo = new Rectangulo("Rectangulo", 4, 6);
-        Triangulo triangulo = new Triangulo("Triangulo", 7, 3);
+        Cuadrado cu = new Cuadrado("Cuadrado", 5);
+        Circulo ci = new Circulo("Circulo", 3.5);
+        Rectangulo rec = new Rectangulo("Rectangulo", 4, 6);
+        Triangulo tri = new Triangulo("Triangulo", 7, 3);
 
-        System.out.println("Área del " + cuadrado.getTipo() + ": " + cuadrado.area());
-        System.out.println("Área del " + circulo.getTipo() + ": " + circulo.area());
-        System.out.println("Área del " + rectangulo.getTipo() + ": " + rectangulo.area());
-        System.out.println("Area del "+ triangulo.getTipo()+ ": "+ triangulo.area()); 
+        System.out.println("Los Lados del " + cu.getTipo() + " son: " + cu.getLado());
+        System.out.println("El Radio del " + ci.getTipo() + " es: " + ci.getRadio());
+        System.out.println("El " + rec.getTipo() + " Tiene una base de " + rec.getBase()+ " Y su altura es "+ rec.getAltura());
+        System.out.println("El "+ tri.getTipo()+ " Tiene una base de "+ tri.getBase()+ " Y su altura es "+ tri.getAltura()); 
     }
     
 }
